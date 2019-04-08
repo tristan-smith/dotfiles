@@ -3,6 +3,8 @@
 
 
 set number
+set relativenumber
+
 set showmode
 
 set expandtab
@@ -29,17 +31,6 @@ set splitright
 command! Start :! yarn run start
 command! Word :call WordProcessor()
 
-" Colors
-colo seoul256
-colo seoul256-light
-set background=dark
-
-" gVim settings
-set guioptions-=m  "menu bar
-set guioptions-=T  "toolbar
-set guioptions-=r  "scrollbar
-set guifont=Lucida_Console:h10:cANSI:qDRAFT
-
 " Plugins
 
 call plug#begin('~/.vim/plugged')
@@ -57,6 +48,27 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
 call plug#end()
+
+" Colors
+colo seoul256
+colo seoul256-light
+set background=dark
+
+" gVim settings
+if has("gui_running")
+  if has ("gui_gtk2") || has("gui_gtk3")
+    set guifont=Consolas\ 11
+  else
+    set guifont=Consolas:h11:cANSI:qDEFAULT
+  endif
+
+  set guioptions-=m  "menu bar
+  set guioptions-=T  "toolbar
+  set guioptions-=r  "scrollbar
+endif
+
+autocmd Filetype md nnoremap j gj
+autocmd Filetype md nnoremap k gk
 
 function! WordProcessor()
   " Plugins
