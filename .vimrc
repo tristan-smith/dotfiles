@@ -4,8 +4,6 @@
 set number
 set relativenumber
 
-filetype plugin on
-
 set showmode
 set showcmd
 
@@ -40,8 +38,6 @@ command! Word :call WordProcessor()
 
 " Snippets
 
-" insert a vue component scaffold with the component named after the file name
-nnoremap ,vue :-1read $HOME/.vim/.skeleton.vue<CR>6j3wa<C-R>=expand('%:t:r')<CR><Esc>gg
 
 nnoremap ,hey aconsole.log('hey');<CR><Esc>
 
@@ -56,6 +52,7 @@ Plug 'sheerun/vim-polyglot'
 " JS
 Plug 'heavenshell/vim-jsdoc'
 Plug 'w0rp/ale'
+Plug 'tristan-smith/skeletons.vim'
 
 " Word Processing
 Plug 'junegunn/goyo.vim'
@@ -67,6 +64,11 @@ call plug#end()
 colo seoul256
 colo seoul256-light
 set background=dark
+
+" Skeletons.vim settings
+if exists('g:skeletons')
+  nnoremap ,vue :VueSkeleton<CR>
+endif
 
 " gVim settings
 if has("gui_running")
