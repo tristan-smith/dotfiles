@@ -1,11 +1,13 @@
 " Tristan Smith
 " 2019
 
-
 set number
 set relativenumber
 
+filetype plugin on
+
 set showmode
+set showcmd
 
 set expandtab
 set softtabstop =2
@@ -27,9 +29,21 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" File Browsing
+let g:netrw_banner=0  " disable banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_liststyle=3 " tree view
+
 " Commands
 command! Start :! yarn run start
 command! Word :call WordProcessor()
+
+" Snippets
+
+" insert a vue component scaffold with the component named after the file name
+nnoremap ,vue :-1read $HOME/.vim/.skeleton.vue<CR>6j3wa<C-R>=expand('%:t:r')<CR><Esc>gg
+
+nnoremap ,hey aconsole.log('hey');<CR><Esc>
 
 " Plugins
 
