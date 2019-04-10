@@ -14,5 +14,5 @@ $ vim
 
 ## Tmux Setup
 ```
-$ curl -fLo ~/.vimrc1 https://raw.githubusercontent.com/tristan-smith/dotfiles/master/.tmux.conf
+$ curl -fLo ~/.vimrc https://raw.githubusercontent.com/tristan-smith/dotfiles/master/.tmux.conf
 ```
