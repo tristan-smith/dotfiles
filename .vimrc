@@ -1,6 +1,14 @@
 " Tristan Smith
 " 2019
 
+set encoding=UTF-8
+
+set hidden
+
+set nocompatible
+filetype plugin on
+syntax on
+
 set number
 set relativenumber
 
@@ -38,8 +46,7 @@ command! Word :call WordProcessor()
 
 " Snippets
 
-
-nnoremap ,hey aconsole.log('hey');<CR><Esc>
+nnoremap ,hey console.log('hey');<CR><Esc>
 
 " Plugins
 
@@ -48,6 +55,7 @@ call plug#begin('~/.vim/plugged')
 " General Use Plugins
 Plug 'junegunn/seoul256.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'christoomey/vim-tmux-navigator'
 
 " JS
 Plug 'heavenshell/vim-jsdoc'
@@ -103,4 +111,3 @@ function! WordProcessor()
   setlocal spell spelllang=en_us
 
 endfunction
-
