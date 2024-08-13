@@ -26,6 +26,9 @@ inoremap fd <Esc>
 set novisualbell
 set noerrorbells
 
+" Better paste for me
+xnoremap p P
+
 " Split Navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
