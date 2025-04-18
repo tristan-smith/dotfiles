@@ -10,7 +10,7 @@ filetype plugin on
 syntax on
 
 set number
-set relativenumber
+" set relativenumber
 
 set showmode
 set showcmd
