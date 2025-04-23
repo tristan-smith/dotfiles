@@ -1,0 +1,144 @@
+{
+  // EDITOR
+  "window.commandCenter": false, // remove the obnoxious command entry thing at the top of the window
+  "editor.stickyScroll.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.folding": false, // removes the folding feature
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    100
+  ],
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    // "statusBar.background": "#ff0000",
+    "statusBar.noFolderBackground": "#bfd8f5",
+    //   "statusBar.debuggingBackground": "#bfd8f5"
+  },
+  "debug.toolBarLocation": "docked",
+  // COMMENTS
+  "doxdocgen.c.firstLine": "/***************************************************************************//**",
+  "doxdocgen.c.lastLine":  "*******************************************************************************/",
+  "doxdocgen.generic.returnTemplate": "\n@return {type} ",
+  "doxdocgen.file.versionTag": "",
+  "doxdocgen.generic.authorName": "",
+  "doxdocgen.generic.authorTag": "",
+  "doxdocgen.generic.authorEmail": "",
+  "doxdocgen.generic.dateTemplate": "",
+  "doxdocgen.file.copyrightTag": [
+  ],
+  "doxdocgen.generic.boolReturnsTrueFalse": false,
+  // Language specific formatting
+  "[c]": {
+    "editor.tabSize": 3,
+    "editor.insertSpaces": true
+  },
+  "[cpp]": {
+    "editor.tabSize": 3,
+    "editor.insertSpaces": true
+  },
+  "[dts]": {
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false
+  },
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  // C++
+  "cmake.configureOnOpen": false,
+  "C_Cpp.default.cppStandard": "c++14",
+  "C_Cpp.default.forcedInclude": [
+    "${workspaceFolder}/build/zephyr/include/generated/autoconf.h"
+  ],
+  // TERMINALS
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+  // VIM
+  "vim.vimrc.enable": true,
+  "vim.insertModeKeyBindingsNonRecursive": [],
+  "vim.disableExtension": false,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  // NEOVIM
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+  // NRF CONNECT
+  "nrf-connect.enableTelemetry": false,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "nrf-connect.debugging.flash": false,
+  "nrf-connect.flash.recover": true,
+  "nrf-connect.flash.erase": true,
+  // HEX EDITOR
+  "hexeditor.columnWidth": 4,
+  "hexeditor.showDecodedText": false,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "workbench.settings.applyToAllProfiles": [
+    "window.commandCenter",
+    "editor.stickyScroll.enabled",
+    "editor.renderWhitespace",
+    "editor.detectIndentation",
+    "editor.tabSize",
+    "editor.folding",
+    "editor.lineNumbers",
+    "editor.minimap.enabled",
+    "editor.rulers",
+    "workbench.colorTheme",
+    "workbench.layoutControl.enabled",
+    "workbench.editor.enablePreview",
+    "workbench.editor.showIcons", // removes icon from opened files in tabs
+    "workbench.iconTheme",
+    "workbench.startupEditor",
+    "workbench.colorCustomizations",
+    "debug.toolBarLocation",
+  ],
+  "workbench.colorTheme": "Seoul Dark",
+  // C++ Class Generator
+  "cpp.creator.headerFileContentPreset": "#ifndef {{*CLASSNAMEUPPER*}}_HPP\n#define {{*CLASSNAMEUPPER*}}_HPP\n\nclass {{*CLASSNAME*}}\n{\npublic:\n   {{*CLASSNAME*}}();\n   ~{{*CLASSNAME*}}();\nprotected:\nprivate:\n\n};\n\n#endif //  {{*CLASSNAMEUPPER*}}_HPP",
+  "cpp.creator.headerFileNamePreset": "{{*CLASSNAME*}}.hpp",
+  "cpp.creator.setPath": "true",
+  "doxdocgen.cpp.dtorText": "Destructor",
+  "doxdocgen.cpp.ctorText": "Constructor",
+}
