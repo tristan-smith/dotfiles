@@ -1,0 +1,70 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+      "key": "ctrl+shift+i",
+      "command": "toggleVim",
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+ctrl+tab",
+        "command": "workspace.action.openPreviousRecentlyUsedEditorInGroup",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+shift+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "filesExplorerFocus"
+    },
+    {
+      "key": "ctrl+w",
+      "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "workbench.action.tasks.runTask"
+    }
+  ]
